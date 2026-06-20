@@ -1,17 +1,8 @@
----
-name: feishu-markdown-format
-description: Use when formatting or editing Markdown documents intended for pasting into Feishu — blank lines are excessive, heading numbers are missing or mismatched, tables/lists contain bold/italic syntax, or code blocks may cause Feishu rendering errors.
----
+# Markdown 格式兼容规则
 
-# Feishu Markdown 格式化
+四条规则的完整说明 + 常见错误表，供 [SKILL.md](SKILL.md) 阶段二执行时查阅。仅当输入或输出文档为 Markdown 格式时执行本文件规则；非 Markdown 文档不要套用标题编号、空行、代码块等 Markdown 处理。
 
-## 概述
-
-飞书对 Markdown 有特定解析限制，本 skill 定义四条规则使文档在飞书中正确渲染。
-
-## 规则
-
-### 1. 空行
+## 1. 空行
 
 保留以下三种空行，其余全部删除：
 - 表格后恰好一行（否则后续段落被解析为表格的一部分）
@@ -20,7 +11,7 @@ description: Use when formatting or editing Markdown documents intended for past
 
 删除的位置：标题前后、段落↔列表、段落↔代码块（前后均删）、段落↔表格前、段落↔引用块、图片↔段落。
 
-### 2. 标题编号
+## 2. 标题编号
 
 各级标题手动添加编号，层级与格式须一一对应：
 
@@ -30,11 +21,11 @@ description: Use when formatting or editing Markdown documents intended for past
 | `###` | N.N | `### 1.1 方案` |
 | `####` | N.N.N | `#### 1.1.1 细节` |
 
-### 3. 表格和列表内禁用内联语法
+## 3. 表格和列表内禁用内联语法
 
 表格单元格和列表条目内，不得使用 `**加粗**`、`*斜体*` 等内联语法（飞书不兼容）。段落正文内可正常使用。
 
-### 4. 代码块兼容性
+## 4. 代码块兼容性
 
 - 内容为 Markdown 格式的代码块 → 改用 ` ```text ` 渲染为纯文本
 - 代码块内部含三反引号 ` ``` ` → 改用四反引号 ` ```` ` 包装整个代码块
