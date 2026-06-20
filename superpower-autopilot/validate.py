@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Structural validator for the autonomous-dev-iteration skill.
+"""Structural validator for the superpower-autopilot skill.
 
 Performs STRUCTURAL checks only (frontmatter, orchestration sequencing, required
 references) and does NOT verify prose is meaningful or behaviorally correct —

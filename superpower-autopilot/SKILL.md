@@ -1,9 +1,9 @@
 ---
-name: autonomous-dev-iteration
+name: superpower-autopilot
 description: Use when a coding requirement should be driven from design through delivery autonomously, with only brainstorming interactive and no pausing for routine approvals; use when the user pre-authorizes unattended execution and you must know exactly when to stop anyway.
 ---
 
-# Autonomous Dev Iteration
+# Superpower Autopilot
 
 ## Overview
 给定一个代码需求后，**除 brainstorming 外全程自治执行到底**。本 skill 只做一件事：
