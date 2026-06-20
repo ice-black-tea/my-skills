@@ -1,6 +1,7 @@
 ---
 name: superpower-autopilot
 description: Use when a coding requirement should be driven from design through delivery autonomously, with only brainstorming interactive and no pausing for routine approvals; use when the user pre-authorizes unattended execution and you must know exactly when to stop anyway.
+disable-model-invocation: true
 ---
 
 # Superpower Autopilot
